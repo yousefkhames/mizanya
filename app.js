@@ -77,7 +77,11 @@
     var s = String(v).replace(/[٠-٩]/g, function (d) { return d.charCodeAt(0) - 1632; }).replace(/[۰-۹]/g, function (d) { return d.charCodeAt(0) - 1776; }).replace(/[,٬\s]/g, '').replace(/٫/g, '.');
     var n = parseFloat(s); return isFinite(n) ? n : NaN;
   }
-  function fm(n) { var L = lang(); return MZ.money(n, (CURL[L] && CURL[L][state.currency]) || state.currency, L); }
+  function fm(n) {
+    var L = lang(), cur = (CURL[L] && CURL[L][state.currency]) || state.currency, v = Number(n) || 0;
+    var core = MZ.money(Math.abs(v), cur, L);
+    return v < 0 ? '\u2066\u2212' + core + '\u2069' : core;
+  }
   function fdate(s) {
     var p = s.split('-'); var d = new Date(Number(p[0]), Number(p[1]) - 1, Number(p[2]));
     if (isNaN(d)) return s;
