@@ -3,6 +3,15 @@
 <p align="center"><b>Envelope budgeting with the 50/30/20 rule. Runs in your browser. No accounts, no server.</b><br>ميزانية بالظروف بقاعدة 50/30/20. بتشتغل في المتصفح، من غير حسابات ولا سيرفر.</p>
 <p align="center"><a href="https://yousefkhames.github.io/mizanya/"><b>Open the live demo</b></a></p>
 
+## Screenshots
+
+Captured from the live site (https://yousefkhames.github.io/mizanya/).
+
+<p>
+  <img src="docs/screenshots/live-desktop.png" alt="mizanya desktop view" width="640">
+  <img src="docs/screenshots/live-mobile.png" alt="mizanya mobile view" width="200">
+</p>
+
 ## The idea
 
 Enter your monthly income once. Mizanya splits it into **Needs 50%**, **Wants 30%** and **Savings 20%** (you can change the split), then into envelopes such as Housing, Groceries, Fun and Emergency fund. Every expense comes out of an envelope. You always see what is left, and an envelope turns red when you go over. Short on groceries but have spare in Fun? Move money between envelopes.
